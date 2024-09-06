@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="widths=device-width, initial-scale=1.0">
+  <title>Gold Text to PNG</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="column">
+  <nav class="nav">
+    Tosin Font Designer
+  </nav>
+  <div class="full-page column">
+    <div class="container" id="canvas-container">
+      <canvas id="myCanvas"></canvas>
+    </div>
+    <div class="column">
+      <div class="row">
+        <div class="column">
+          <div class="row"><input type="button" id="bold" value="B">
+            <input type="button" id="italic" value="I">
+            <input type="button" id="underline" value="U">
+          </div>
+          <div class="column">
+            <select name="fonts" id="fonts">
+              <option value="arial">Arial</option>
+              <option value="Roboto">Roboto</option>
+              <option value="Times New Roman">Times New Roman</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <input type="text" id="inputText" placeholder="Enter your text here" />
+      </div>
+      <div class="row">
+        <button id="draw-btn">Generate Image</button>
+        <button id="download-btn">Download PNG</button>
+      </div>
+    </div>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+</html>
